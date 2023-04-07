@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+#PERSO
+.vscode
+Scripts/
+pyvenv.cfg
+*.log*
+
 # Distribution / packaging
 .Python
 build/
@@ -127,6 +133,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+Db/Mageco.db
+.project
 MAGECO.log.1
 MAGECO.log.2
 MAGECO.log.3
