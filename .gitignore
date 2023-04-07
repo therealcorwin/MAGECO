@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+MAGECO.log.1
+MAGECO.log.2
+MAGECO.log.3
+Db/Mageco.db
