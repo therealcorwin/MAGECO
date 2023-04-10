@@ -1,7 +1,7 @@
 from logging.config import fileConfig
 from logging import getLogger
 import configparser
-from pathlib import Path 
+from pathlib import Path
 import sqlite3 as sql
 
 ROOT_APP_DIR = Path(__file__).resolve().parent
@@ -15,7 +15,7 @@ APP_CONF_DIR = APP_DIR.joinpath("Conf")
 APP_CONF_FILE = APP_CONF_DIR.joinpath("Config.ini")
 
 
-""" 
+"""
 
    INITIALISATION LOGGING
 
@@ -39,11 +39,9 @@ if Path.is_dir(APP_CONF_DIR):
     applog.info("Lecture du fichier de configuration")
     config_app = configparser.ConfigParser()
     config_app.read_file(open(APP_CONF_FILE,"r"))
-else: 
+else:
    applog.critical("Le fichier config.ini n'existe pas")
    exit("Le fichier Config.ini n'existe pas")
-
-
 """
 
     INITIALISATION BD MAGECO
@@ -51,7 +49,7 @@ else:
 """
 if Path.is_file(APP_DB_FILE):
     applog.info("Base de données détectée")
-else: 
+else:
     applog.error("Base de données absente")
     applog.info("Création du repertoire et de la base de données")
     try:

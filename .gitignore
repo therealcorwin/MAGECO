@@ -141,3 +141,4 @@ MAGECO.log.2
 MAGECO.log.3
 Db/Mageco.db
 pyproject.toml
+poetry.lock
